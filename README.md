@@ -42,16 +42,16 @@ During post-Selection the user will have te chance to sort all components that a
 
 Important features to look out for are:
 
-**Spatial Component**
-(1) Components that have a roundish shape (paticularly in the center) and are not strongly elongated 
-(2) Have clear borders and are not smeared out
-(3) Are not too small or too large in comparison with the other extracted components
-(4) Are not located within the region of the Motion Correction artifacts (visible as white bands)
+**Spatial Component**  
+(1) Components that have a roundish shape (paticularly in the center) and are not strongly elongated  
+(2) Have clear borders and are not smeared out  
+(3) Are not too small or too large in comparison with the other extracted components  
+(4) Are not located within the region of the Motion Correction artifacts (visible as white bands)  
 
-**Temporal component**
-(1) Have clear transients that conform with the biophsical properties of the calcium indicator (for example have a clearly visible decay that is consistent with the dissociation constant of the Indicator)
-(2) Have a stable baseline that does not change abruptly (negative baseline changes can only biologically exist with the same dissociation constant as calcium transients)
-(3) Have a good S/N ration (a line indicates mean + 3 * std, which can be a good first measure to assess S/N ratio)
+**Temporal component**  
+(1) Have clear transients that conform with the biophsical properties of the calcium indicator (for example have a clearly visible decay that is consistent with the dissociation constant of the Indicator)  
+(2) Have a stable baseline that does not change abruptly (negative baseline changes can only biologically exist with the same dissociation constant as calcium transients)  
+(3) Have a good S/N ration (a line indicates mean + 3 * std, which can be a good first measure to assess S/N ratio)  
 
 After finishing all components of all sessions and animals the code will proceed to cross-day alignment.
 
