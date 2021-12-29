@@ -10,15 +10,15 @@ This code repository serves as a minimal implementation of the forenamed reposit
 # Installation #
 The easiest way to use this code is to clone the repository in Matlab. You can check out how to do it [here](https://www.mathworks.com/help/matlab/matlab_prog/retrieve-from-git-repository.html) and [here](https://www.youtube.com/watch?v=O7A27uMduo0). Alternatively you can also download the code and save and mantain it locally on your computer. 
 
-It requires a computer with a minimum of 64 GB RAM and for ease of processing should have at least 4 - 6 cores. It requires following Matlab packages:
-
-'Optimization Toolbox'
-'Signal Processing Toolbox'
-'Image Processing Toolbox'
-'Statistics and Machine Learning Toolbox'
-'Curve Fitting Toolbox'
-'Parallel Computing Toolbox'
-'MATLAB Parallel Server'
+It requires a computer with a minimum of 64 GB RAM and for ease of processing should have at least 4 - 6 cores. It requires following Matlab packages:  
+  
+'Optimization Toolbox'  
+'Signal Processing Toolbox'  
+'Image Processing Toolbox'  
+'Statistics and Machine Learning Toolbox'  
+'Curve Fitting Toolbox'  
+'Parallel Computing Toolbox'  
+'MATLAB Parallel Server'  
 
 # Usage #
 ## Parameter Selection ##
@@ -88,19 +88,28 @@ S_all - contains the variable S for components that could be aligned across all 
 C_raw_all - contains the variable C_raw for components that could be aligned across all Sessions *neurons * t*  
 S_all - contains the variable S for components that could be aligned across all Sessions *neurons * t*** 
 
-C_unsorted - contains the variable C split into cells/session with all neurons detected in this session *session{n}(neurons*t)*  
-C_raw_unsorted - contains the variable C_raw split into cells/session with all neurons detected in this session *session{n}(neurons*t)*  
-S_unsorted - contains the variable S split into cells/session with all neurons detected in this session *session{n}(neurons*t)*  
+C_unsorted - contains the variable C split into cells/session with all neurons detected in this session *session{n}(neurons * t)*  
+C_raw_unsorted - contains the variable C_raw split into cells/session with all neurons detected in this session *session{n}(neurons * t)*  
+S_unsorted - contains the variable S split into cells/session with all neurons detected in this session *session{n}(neurons * t)*  
 
 Order - contains the indices of neurons that could be aligned across days (example *Row*: 0 0 5 4 1 - this neuron could be aligned in 3 Sessions and can be called with C_unsorted{3}(5, :) for session 3, C_unsorted{4}(4, :) for session 4 and C_unsorted{5}(1, :) for Session 5). *neuron * session*  
 
 I would generally recommend to extract neurons with relevant alignment new with the procedure outlined above, however for new users, using the variable set  .... can also be a good option.
 
 # References #
-If you decide to use this code, please cite the relevant works of the people who contributed much of the original Code:    
+If you decide to use this code, please cite the relevant works especially of the people who contributed the original Code that runs this pipeline:    
 
 Zhou, P., Resendez, S.L., Rodriguez-Romaguera, J., Jimenez, J.C, Neufeld, S.Q., Giovannucci, A., Friedrich, J., Pnevmatikakis, E.A., Stuber, Garret D , Stuber, G.D., Hen, R., Kheirbek, M.A., Sabatini, B.L., Kass, R.E., Paninski, L. (2018). [Efficient and accurate extraction of in vivo calcium signals from microendoscopic video data.](https://elifesciences.org/articles/28728) eLife, pp.e28728.
 
+Manuel Guizar-Sicairos, Samuel T. Thurman, and James R. Fienup, [Efficient subpixel image registration algorithms](https://www.osapublishing.org/ol/abstract.cfm?uri=ol-33-2-156), Opt. Lett. 33, 156-158 (2008)
+
+Sheintuch, L., Rubin, A., Brande-Eilat, N., Geva, N., Sadeh, N., Pinchasof, O., Ziv, Y. (2017). [Tracking the Same Neurons across Multiple Days in Ca2+ Imaging Data.](https://www.sciencedirect.com/science/article/pii/S2211124717314304) Cell Reports, 21(4), pp. 1102–1115. doi: 10.1016/j.celrep.2017.10.013.
+
+Corder, G., Ahanonu, B., Grewe, B. F., Wang, D., Schnitzer, M. J., & Scherrer, G. (2019). [An amygdalar neural ensemble that encodes the unpleasantness of pain.](https://www.science.org/doi/full/10.1126/science.aap8586) Science, 363(6424), 276-281.
+
+and
+
+Courtin et al () ....
 
 
 
