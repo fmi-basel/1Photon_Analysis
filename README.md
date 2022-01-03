@@ -77,25 +77,25 @@ CNMFE_Data.mat - subselected data from CNMFE after post-selection is finished, s
 Delete_1/2.mat - Deletion indices for automatic exclusion *x*    
 Outline.mat/png - Outline of the selected neurons (plotted on top of the correlation image)   
 
-After the Cross-Day Alignment is finished a new folder is generated called *Alignment*. In this folder the code will save several variables related to the alignment procedure and the final Outputs *Data_Miniscope.mat* and *Data_Miniscope_PP.mat*. Both variables are identical and contain all information necessary for downstream analysis, however the variable **Data_Miniscope_PP.mat** is the Output generated, after the user finishes the post cross-day Alignment step.  It contains variables that follow the CNMFE naming convention set out by Pencheng Zhou in his GitHub [Wiki](https://github.com/zhoupc/CNMF_E/wiki/Understand-CNMF-E-results). I would recommend to follow his advice on utilizing the variables **C** and **A** for downstream analysis, however all variables are accessible.
+After the Cross-Day Alignment is finished a new folder is generated called *Alignment*. In this folder the code will save several variables related to the alignment procedure and the final Outputs *Data_Miniscope.mat* and *Data_Miniscope_PP.mat*. Both variables are identical and contain all information necessary for downstream analysis, however the variable **Data_Miniscope_PP.mat** is the Output generated, after the user finishes the post cross-day Alignment step.  It contains variables that follow the CNMFE naming convention set out by Pencheng Zhou. I recommend to follow his [advice](https://github.com/zhoupc/CNMF_E/wiki/Understand-CNMF-E-results) on utilizing the variables **C** and **A** for downstream analysis, however all variables are accessible.
 
 To help with analysing cross-day data, the code will generate multiple variables containing the concatenated results in single variables:  
 
-C_all - contains the variable C for components that could be aligned across all Sessions *neurons * t*  
-C_raw_all - contains the variable C_raw for components that could be aligned across all Sessions *neurons * t*  
-S_all - contains the variable S for components that could be aligned across all Sessions *neurons * t*  
+C - contains the variable C for components that could be aligned across all Sessions *neurons * t*  
+C_raw - contains the variable C_raw for components that could be aligned across all Sessions *neurons * t*  
+S - contains the variable S for components that could be aligned across all Sessions *neurons * t*  
 
-**C_all - contains the variable C for components that could be aligned across all Sessions *neurons * t*  
-C_raw_all - contains the variable C_raw for components that could be aligned across all Sessions *neurons * t*  
-S_all - contains the variable S for components that could be aligned across all Sessions *neurons * t*** 
+C_all - contains the concatenated variable C for all global components. Sessions that could not be aligned are filled with nan's *neurons * t*  
+C_raw_all - contains the concatenated variable C_Raw for all global components. Sessions that could not be aligned are filled with nan's *neurons * t*  
+S_all - contains the concatenated variable S for all global components. Sessions that could not be aligned are filled with nan's *neurons * t*
 
-C_unsorted - contains the variable C split into cells/session with all neurons detected in this session *session{n}(neurons * t)*  
-C_raw_unsorted - contains the variable C_raw split into cells/session with all neurons detected in this session *session{n}(neurons * t)*  
-S_unsorted - contains the variable S split into cells/session with all neurons detected in this session *session{n}(neurons * t)*  
+C_unsorted - contains the variable C split into cells (one cell/session) with all neurons detected in this session *session{n}(neurons * t)*  
+C_raw_unsorted - contains the variable C_raw split into cells (one cell/session) with all neurons detected in this session *session{n}(neurons * t)*  
+S_unsorted - contains the variable S split into cells (one cell/session) with all neurons detected in this session *session{n}(neurons * t)*  
 
 Order - contains the indices of neurons that could be aligned across days (example *Row*: 0 0 5 4 1 - this neuron could be aligned in 3 Sessions and can be called with C_unsorted{3}(5, :) for session 3, C_unsorted{4}(4, :) for session 4 and C_unsorted{5}(1, :) for Session 5). *neuron * session*  
 
-I would generally recommend to extract neurons with relevant alignment new with the procedure outlined above, however for new users, using the variable set  .... can also be a good option.
+I would generally recommend to extract neurons with relevant alignment new with the procedure outlined above, however for new users, using the variable set *..._all* can also be a good option.
 
 # References #
 If you decide to use this code, please cite the relevant works especially of the people who wrote the original Code that runs this pipeline:    
@@ -108,7 +108,7 @@ Sheintuch, L., Rubin, A., Brande-Eilat, N., Geva, N., Sadeh, N., Pinchasof, O., 
 
 Corder, G., Ahanonu, B., Grewe, B. F., Wang, D., Schnitzer, M. J., & Scherrer, G. (2019). [An amygdalar neural ensemble that encodes the unpleasantness of pain.](https://www.science.org/doi/full/10.1126/science.aap8586) Science, 363(6424), 276-281.
 
-if you find this paticular pipeline useful and use it in parts or whole, please cite also the following paper:
+if you find this pipeline useful and use it in parts or whole, please cite also the following paper:
 
 Courtin et al () ....
 
