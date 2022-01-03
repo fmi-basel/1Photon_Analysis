@@ -52,9 +52,9 @@ Important features to look out for are:
 (5) Are located on top of a visible peak in the local correlation Image
 
 **Temporal component**  
-(1) Have clear transients that conform with the biophysical properties of the calcium indicator (for example have a clearly visible decay that is consistent with the dissociation constant of the Indicator)  
-(2) Have a stable baseline that does not change abruptly (negative baseline changes can only biologically exist with the same dissociation constant as calcium transients)  
-(3) Have a good S/N ration (a line indicates mean + 3 * std, which can be a good first measure to assess S/N ratio)  
+(1) Have clear transients that conform with the biophysical properties of the calcium indicator (for example have a clearly visible decay that is consistent with the dissociation constant of the indicator)  
+(2) Have a stable baseline that does not change abruptly (negative baseline changes are only biophysically feasible if they have a kinetic slower or equal to the dissociation constant of the calcium sensor, any faster transients must be artifact driven)  
+(3) Have a good signal to noise ratio (SNR) - a line indicates mean + 3 * std, which can be a good first measure to assess SNR
 
 After finishing all components of all sessions and animals the code will proceed to cross-day alignment.
 
