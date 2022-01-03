@@ -63,7 +63,7 @@ Here I used the code implementations of [Ahanonu](https://github.com/bahanonu/ci
 This step serves as a final sanity check to verify the automatic output of the Cross-Day alignment results and users are asked to manually accept all identified aligned components. In this step components that are only misaligned in individual sessions can also be excluded by indicating the Session in the command window. features that we deem important for successfull alignment are the consistency in transient shape and spatial component overlap, both in spatial location as well as the appearance.
 
 # Understanding Results #
-The code will generate a new Folder in each Session that was processed containing all relevant intermediate processing steps and Results. There are the following variables:
+The code will generate a new folder in each session that was processed containing all relevant intermediate processing steps and results. Folders contain the following variables:
 
 dataset.mat - contains the raw, spatially downsampled data in form *x * y * t*  
 MC.mat - contains the raw, spatially downsampled and motion corrected data in form *x * y * t*  
