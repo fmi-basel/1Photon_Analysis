@@ -95,7 +95,9 @@ S_unsorted - contains the variable S split into cells (one cell/session) with al
 
 Order - contains the indices of neurons that could be aligned across days (example *Row*: 0 0 5 4 1 - this neuron could be aligned in 3 Sessions and can be called with C_unsorted{3}(5, :) for session 3, C_unsorted{4}(4, :) for session 4 and C_unsorted{5}(1, :) for Session 5). *neuron * session*  
 
-I would generally recommend to extract neurons with relevant alignment new with the procedure outlined above, however for new users, using the variable set *..._all* can also be a good option.
+Start_Frame_Session - contains the index of the start of each of the Session referring to the variables *..._all* and *C, C_raw and S*.  
+
+SessionNames - contains the filepaths to the sessions that are concatenated (in order of concatenation).
 
 # References #
 If you decide to use this code, please cite the relevant works especially of the people who wrote the original Code that runs this pipeline:    
@@ -111,17 +113,4 @@ Corder, G., Ahanonu, B., Grewe, B. F., Wang, D., Schnitzer, M. J., & Scherrer, G
 if you find this pipeline useful and use it in parts or whole, please cite also the following paper:
 
 Courtin et al () ....
-
-
-
-
-
-
-
-
-
-
-
-
-
 
