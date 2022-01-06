@@ -12,7 +12,7 @@ The code currently works with the following data formats: tif, tiff, hdf5, mat a
 # Installation #
 The easiest way to use this code is to clone the repository in Matlab. You can check out how to do it [here](https://www.mathworks.com/help/matlab/matlab_prog/retrieve-from-git-repository.html) and [here](https://www.youtube.com/watch?v=O7A27uMduo0). Alternatively you can also download the code and save and maintain it locally on your computer. 
 
-It requires a computer with a minimum of 64 GB RAM and for ease of processing should have at least 4 - 6 cores. It requires the following Matlab packages:  
+It requires a computer with a minimum of 64 GB RAM and for ease of processing should have at least 4 - 6 cores. It has been tested with Matlab 2017b and Matlab 2018a. It requires the following Matlab packages:  
   
 * 'Optimization Toolbox'  
 * 'Signal Processing Toolbox'  
