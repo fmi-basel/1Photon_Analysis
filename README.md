@@ -119,3 +119,6 @@ if you find this pipeline useful and use it in parts or whole, please cite also 
 
 Courtin et al [](https://science.org/doi/10.1126/science.abg7277)
 
+# Help #
+If you have further questions, please reach out! You can find my contact information [here](https://hijul.github.io/).
+
