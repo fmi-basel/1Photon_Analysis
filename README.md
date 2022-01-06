@@ -21,6 +21,8 @@ It requires a computer with a minimum of 64 GB RAM and for ease of processing sh
 * 'Curve Fitting Toolbox'  
 * 'Parallel Computing Toolbox'  
 
+To run the code, open the script *oneP_Image_Analysis.m* in your editor and follow the instructions below.
+
 # Usage #
 ## Parameter Selection ##
 Parameters are described extensively in inline comments in the code, but most importantly you need to identify the path of your Inscopix Installation when processing .isxd files from NV3 systems. All other parameters should work in the specified range and can be changed if results do not match expectation, but are generally suited to obtain good first results. Moreover, the code expects a numerical identifier in the folder names that is later used to save individual animals in different folders. Please specify the length of the identifier in the variable: length_identifier. If the code doesn't find an numerical identifier, it will save the last processing step in an undifferentiated folder, so when processing multiple animals, it will overwrite results.
