@@ -117,7 +117,7 @@ Corder, G., Ahanonu, B., Grewe, B. F., Wang, D., Schnitzer, M. J., & Scherrer, G
 
 if you find this pipeline useful and use it in parts or whole, please cite also the following paper:
 
-Courtin, J., Bitterman, Y., Müller, S., Hinz, J., Hagihara, K. M., Müller, C., Lüthi, A. (2022). [A neuronal mechanism for motivational control of behavior](https://science.org/doi/10.1126/science.abg7277) Science, 375(6576)
+Courtin, J., Bitterman, Y., Müller, S., Hinz, J., Hagihara, K. M., Müller, C., Lüthi, A. (2022). [A neuronal mechanism for motivational control of behavior.](https://science.org/doi/10.1126/science.abg7277) Science, 375(6576)
 
 # Help #
 If you have further questions, please reach out! You can find my contact information [here](https://hijul.github.io/).
